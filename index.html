@@ -11,11 +11,13 @@
 
     <div class="mainContainer">
     <div class="inputContainer">
-        <textarea  class="todoInput"> </textarea>
+         <label id="todoTitleLable">Title: <input type="text" id="todoTitle"></label>
+       <h3 id="labelDescription"> Description </h3> 
+        <textarea  id="toDoDescription"> </textarea>
     </div>
     
 
-    <div class="submitButtonContainer" onclick="myFunction()"> 
+    <div class="submitButtonContainer" onclick="addItem()"> 
     <div class="submitButton">
         Submit
     </div>

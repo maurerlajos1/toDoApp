@@ -24,7 +24,7 @@ grid-gap: 50px;
 
 }
 
-.todoInput{
+#toDoDescription{
     width: 100%;
     position: relative;
     min-height: 250px;
@@ -67,7 +67,11 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .singleListItemContainer{
     display: grid;
-    grid-template-columns: 1fr 25px;
+    grid-template-areas:
+    'title title title title deleteItem'
+    'description description description description description'
+    'description description description description description';
+
     background-color: rgb(107 134 232 / 30%);
     border-radius: 12px;
     padding: 25px;
@@ -76,11 +80,21 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /* Close Button Start */
   
 .deleteItem{
+    grid-area: deleteItem;
     color: red;
 }
   
 /* Close Button End */
 
 .listItem{
-  
+  grid-area: title;
+}
+
+#todoTitleLable, #labelDescription {
+    color: white;
+}
+
+.description{
+    grid-area: description;
+    color: violet;
 }
