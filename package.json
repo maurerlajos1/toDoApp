@@ -1,0 +1,37 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Simple To Do App",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurerlajos1/toDoApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maurerlajos1/toDoApp/issues"
+  },
+  "homepage": "https://github.com/maurerlajos1/toDoApp#readme",
+
+  "devDependencies": {
+    "css-loader": "latest",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "latest",
+    "progress-bar-webpack-plugin": "latest",
+    "raw-loader": "^4.0.2",
+    "style-loader": "latest",
+    "ts-loader": "latest",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+
+}
+
